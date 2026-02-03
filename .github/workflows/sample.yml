@@ -1,0 +1,38 @@
+name: sync default html
+
+on:
+  #workflow_run:
+  #  workflows: ["verify"] # 監視対象のワークフロー名
+  #  types:
+  #    - completed # 完了したときに実行
+
+  #push:
+  #  branches:
+  #    - main
+
+  # 手動
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sample-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main # ブランチ指定
+          fetch-depth: 0 # 全履歴を取得（oj-verifyの「最終更新日」判定に必要）
+
+      - name: sample step
+        run: |
+          echo ok
+          echo ok
+
+      - name: sample step
+        run: |
+          echo ok
+          echo ok
