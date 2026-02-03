@@ -1,0 +1,71 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "アクティブなC++ファイルのビルド",
+            "type": "cppbuild",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-D=LOCAL",
+                "-std=c++23",
+                "-I",
+                "/workspaces/library-cpp",
+                "-Wall",
+                "-Wextra",
+                "-mtune=native",
+                "-march=native",
+                "-fconstexpr-depth=2147483647",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/a.out"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "現在C++ファイルをビルドします。"
+        },
+        {
+            "label": "サンプルタスク1",
+            "command": "sh",
+            "args": [
+                "xxx.sh",
+                "${fileDirname}",
+                "${input:input_A}"
+            ],
+            "problemMatcher": [],
+            "detail": "shellファイルを実行します"
+        },
+        {
+            "label": "サンプルタスク2",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "アクティブなC++ファイルのビルド",
+                "サンプルタスク1"
+            ],
+            "problemMatcher": [],
+            "detail": "タスクをまとめて順次実行"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "input_A",
+            "type": "promptString",
+            "description": "Please input string.",
+            "default": "sample string"
+        },
+        {
+            "id": "input_B",
+            "type": "promptString",
+            "description": "Please input string.",
+            "default": "sample string"
+        }
+    ]
+}
