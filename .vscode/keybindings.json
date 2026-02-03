@@ -8,5 +8,10 @@
         "key": "ctrl+p",
         "command": "workbench.action.nextEditor",
         "when": "config.workspaceKeybindings.template_config.enabled"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "config.workspaceKeybindings.template_config.enabled"
     }
 ]
