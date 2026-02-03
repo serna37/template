@@ -19,10 +19,11 @@
                 "ms-vscode.cpptools-extension-pack"
             ],
             "settings": {
-                "terminal.integrated.defaultProfile.linux": "zsh"
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "window.confirmBeforeClose": "always"
             }
         }
     },
-    "postCreateCommand": "echo 'devcontainer created !!'",
+    "postCreateCommand": "cp .vscode/keybindings.json /User/keybindings.json && echo 'devcontainer created !!'",
     "remoteUser": "vscode"
 }
