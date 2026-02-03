@@ -1,0 +1,12 @@
+[
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.previousEditor",
+        "when": "config.workspaceKeybindings.template_config.enabled"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.nextEditor",
+        "when": "config.workspaceKeybindings.template_config.enabled"
+    }
+]
