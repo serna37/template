@@ -1,6 +1,6 @@
 # template
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/serna37/template)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces?repository_id=1148486321)
 
 <div align="center">
     <h3>Template Repository</h3>
