@@ -1,0 +1,27 @@
+{
+    "name": "bullseye base",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": true
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-containers",
+                "Gruntfuggly.todo-tree",
+                "yzhang.markdown-all-in-one",
+                "davidanson.vscode-markdownlint",
+                "shd101wyy.markdown-preview-enhanced",
+                "ms-vscode.cpptools-extension-pack"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh"
+            }
+        }
+    },
+    "remoteUser": "vscode"
+}
