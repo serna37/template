@@ -23,3 +23,4 @@ My favorite tools.
   - [my dotfiles](https://github.com/serna37/dotfiles)
   - [codespaces setting](https://github.com/settings/codespaces)
 - Open codespaces to edit code
+- Add keybindings via `.vscode/keybindings.json`

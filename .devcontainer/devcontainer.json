@@ -24,6 +24,6 @@
             }
         }
     },
-    "postCreateCommand": "cp .vscode/keybindings.json /User/keybindings.json && echo 'devcontainer created !!'",
+    "postCreateCommand": "echo 'devcontainer created !!'",
     "remoteUser": "vscode"
 }
