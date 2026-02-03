@@ -23,5 +23,6 @@
             }
         }
     },
+    "postCreateCommand": "echo 'devcontainer created !!'",
     "remoteUser": "vscode"
 }
