@@ -1,0 +1,5 @@
+{
+    "MD009": false, // Trailing spaces
+    "MD013": false, // Line length
+    "MD038": false // Spaces inside code span elements
+}
