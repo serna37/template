@@ -5,6 +5,9 @@
     "yzhang.markdown-all-in-one",
     "davidanson.vscode-markdownlint",
     "shd101wyy.markdown-preview-enhanced",
-    "ms-vscode.cpptools-extension-pack"
+    "ms-vscode.cpptools-extension-pack",
+    "ms-python.python",
+    "ms-python.debugpy",
+    "tonybaloney.vscode-pets"
   ]
 }
