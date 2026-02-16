@@ -24,3 +24,11 @@ My favorite tools.
   - [codespaces setting](https://github.com/settings/codespaces)
 - Open codespaces to edit code
 - Add keybindings via `.vscode/keybindings.json`
+
+> [!Tip]
+> gpg xxx error
+
+```sh
+git config --unset commit.gpgsign
+```
+
